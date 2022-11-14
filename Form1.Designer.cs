@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PlayerSprite = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.PlayerSprite)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // PlayerSprite
+            // pictureBox1
             // 
-            this.PlayerSprite.BackColor = System.Drawing.Color.Aqua;
-            this.PlayerSprite.Location = new System.Drawing.Point(28, 659);
-            this.PlayerSprite.Name = "PlayerSprite";
-            this.PlayerSprite.Size = new System.Drawing.Size(60, 60);
-            this.PlayerSprite.TabIndex = 0;
-            this.PlayerSprite.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 657);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 749);
-            this.Controls.Add(this.PlayerSprite);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.PlayerSprite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox PlayerSprite;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
