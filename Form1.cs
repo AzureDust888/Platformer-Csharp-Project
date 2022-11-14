@@ -16,5 +16,10 @@ namespace Platformer_Csharp_Project
         {
             InitializeComponent();
         }
+
+        private void MainGameEvent(object sender, EventArgs e)
+        {
+
+        }
     }
 }
