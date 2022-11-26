@@ -33,9 +33,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Lb = new System.Windows.Forms.PictureBox();
             this.Rb = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -69,11 +71,21 @@
             this.Rb.TabIndex = 2;
             this.Rb.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Red;
+            this.pictureBox2.Location = new System.Drawing.Point(323, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 753);
+            this.ClientSize = new System.Drawing.Size(726, 749);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Rb);
             this.Controls.Add(this.Lb);
             this.Controls.Add(this.pictureBox1);
@@ -85,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,6 +108,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox Lb;
         private System.Windows.Forms.PictureBox Rb;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
