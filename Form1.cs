@@ -76,6 +76,7 @@ namespace Platformer_Csharp_Project
 
         private void MainGameEvent(object sender, EventArgs e)
         {
+            EnemyCreateAndMove();
             if(pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
                 goLeft = false;
             if(pictureBox1.Bounds.IntersectsWith(Rb.Bounds))
@@ -87,6 +88,9 @@ namespace Platformer_Csharp_Project
             if (pictureBox1.Bounds.IntersectsWith(pictureBox2.Bounds))
                 isGameOver = true;
         }
+        private void EnemyCreateAndMove()
+        {
 
+        }
     }
 }
