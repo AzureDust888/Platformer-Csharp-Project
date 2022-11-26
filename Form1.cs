@@ -84,6 +84,9 @@ namespace Platformer_Csharp_Project
                 pictureBox1.Location = new Point(pictureBox1.Location.X-10, pictureBox1.Location.Y);
             if(goRight)
                 pictureBox1.Location = new Point(pictureBox1.Location.X+10, pictureBox1.Location.Y);
+            if (pictureBox1.Bounds.IntersectsWith(pictureBox2.Bounds))
+                isGameOver = true;
         }
+
     }
 }
