@@ -70,7 +70,6 @@ namespace Platformer_Csharp_Project
         public Form1()
         {
             InitializeComponent();
-            
             timer1.Enabled = true;
             timer1.Interval = 1;
         }
