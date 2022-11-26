@@ -43,7 +43,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox1.Location = new System.Drawing.Point(334, 681);
+            this.pictureBox1.Location = new System.Drawing.Point(319, 689);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
             this.pictureBox1.TabIndex = 0;
@@ -65,11 +65,12 @@
             // Rb
             // 
             this.Rb.BackColor = System.Drawing.Color.Transparent;
-            this.Rb.Location = new System.Drawing.Point(720, -14);
+            this.Rb.Location = new System.Drawing.Point(696, -14);
             this.Rb.Name = "Rb";
             this.Rb.Size = new System.Drawing.Size(16, 776);
             this.Rb.TabIndex = 2;
             this.Rb.TabStop = false;
+            this.Rb.Click += new System.EventHandler(this.Rb_Click);
             // 
             // pictureBox2
             // 
@@ -84,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 749);
+            this.ClientSize = new System.Drawing.Size(704, 761);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Rb);
             this.Controls.Add(this.Lb);
