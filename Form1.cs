@@ -65,6 +65,11 @@ namespace Platformer_Csharp_Project
         public Form1()
         {
             InitializeComponent();
+            Rectangle screen = Screen.PrimaryScreen.WorkingArea;
+            double w = Width >= screen.Width ? screen.Width : (screen.Width + Width) / 4.44;
+            double h = Height >= screen.Height ? screen.Height : (screen.Height + Height) / 2.80;
+         
+            this.Size = new Size(Convert.ToInt32(w), Convert.ToInt32(h));
             timer1.Enabled = true;
             timer1.Interval = 1;
         }
