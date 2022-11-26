@@ -90,7 +90,7 @@ namespace Platformer_Csharp_Project
         }
         private void EnemyCreateAndMove()
         {
-
+            
         }
     }
 }
