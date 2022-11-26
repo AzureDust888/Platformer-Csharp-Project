@@ -74,9 +74,15 @@ namespace Platformer_Csharp_Project
             timer1.Interval = 1;
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void MainGameEvent(object sender, EventArgs e)
         {
             EnemyCreateAndMove();
+
             if(pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
                 goLeft = false;
             if(pictureBox1.Bounds.IntersectsWith(Rb.Bounds))

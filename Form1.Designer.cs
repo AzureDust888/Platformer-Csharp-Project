@@ -75,11 +75,12 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.Location = new System.Drawing.Point(319, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(253, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(56, 50);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 
