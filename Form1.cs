@@ -13,8 +13,8 @@ namespace Platformer_Csharp_Project
     public partial class Form1 : Form
     {
         bool goLeft, goRight, isGameOver;
-        int playerSpeed = 10;
-        int score = 0;
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -32,6 +32,14 @@ namespace Platformer_Csharp_Project
             {
                 goRight = true;
             }
+            if (e.KeyCode == Keys.A)
+            {
+                goLeft = true;
+            }
+            if (e.KeyCode == Keys.D)
+            {
+                goRight = true;
+            }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
@@ -41,6 +49,14 @@ namespace Platformer_Csharp_Project
                 goLeft = false;
             }
             if (e.KeyCode == Keys.Right)
+            {
+                goRight = false;
+            }
+            if (e.KeyCode == Keys.A)
+            {
+                goLeft = false;
+            }
+            if (e.KeyCode == Keys.D)
             {
                 goRight = false;
             }
