@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Platformer_Csharp_Project.Player
 {
-    internal class Class1
+    public class Class1
     {
+
     }
 }
