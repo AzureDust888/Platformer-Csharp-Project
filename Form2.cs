@@ -23,5 +23,10 @@ namespace Platformer_Csharp_Project
         {
             label1.Text = "Score: " + Class1.score.ToString();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
