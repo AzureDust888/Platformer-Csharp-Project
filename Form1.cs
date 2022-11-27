@@ -18,10 +18,8 @@ namespace Platformer_Csharp_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
-
-
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
@@ -41,7 +39,6 @@ namespace Platformer_Csharp_Project
                 goRight = true;
             }
         }
-
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
@@ -67,23 +64,21 @@ namespace Platformer_Csharp_Project
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            enemy.Location = new Point(enemy.Location.X, enemy.Location.Y+5);
+        }
+
         public Form1()
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Interval = 1;
+            timer1.Start();
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainGameEvent(object sender, EventArgs e)
         {
-            EnemyCreateAndMove();
-
-            if(pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
+            if (pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
                 goLeft = false;
             if(pictureBox1.Bounds.IntersectsWith(Rb.Bounds))
                 goRight = false;
@@ -91,12 +86,8 @@ namespace Platformer_Csharp_Project
                 pictureBox1.Location = new Point(pictureBox1.Location.X-10, pictureBox1.Location.Y);
             if(goRight)
                 pictureBox1.Location = new Point(pictureBox1.Location.X+10, pictureBox1.Location.Y);
-            if (pictureBox1.Bounds.IntersectsWith(pictureBox2.Bounds))
+            if (pictureBox1.Bounds.IntersectsWith(enemy.Bounds))
                 isGameOver = true;
-        }
-        private void EnemyCreateAndMove()
-        {
-            
         }
     }
 }
