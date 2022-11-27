@@ -27,6 +27,13 @@ namespace Platformer_Csharp_Project
         private void close_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
+        }
+
+        private void restart_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
         }
     }
 }
