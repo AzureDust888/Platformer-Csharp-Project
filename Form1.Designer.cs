@@ -34,10 +34,14 @@
             this.Lb = new System.Windows.Forms.PictureBox();
             this.Rb = new System.Windows.Forms.PictureBox();
             this.enemy = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -51,7 +55,7 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.MainGameEvent);
             // 
             // Lb
             // 
@@ -75,17 +79,39 @@
             // enemy
             // 
             this.enemy.BackColor = System.Drawing.Color.Red;
-            this.enemy.Location = new System.Drawing.Point(253, 12);
+            this.enemy.Location = new System.Drawing.Point(86, 12);
             this.enemy.Name = "enemy";
             this.enemy.Size = new System.Drawing.Size(56, 50);
             this.enemy.TabIndex = 3;
             this.enemy.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Red;
+            this.pictureBox2.Location = new System.Drawing.Point(263, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Red;
+            this.pictureBox3.Location = new System.Drawing.Point(447, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 661);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.enemy);
             this.Controls.Add(this.Rb);
             this.Controls.Add(this.Lb);
@@ -99,6 +125,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -110,6 +138,8 @@
         private System.Windows.Forms.PictureBox Lb;
         private System.Windows.Forms.PictureBox Rb;
         private System.Windows.Forms.PictureBox enemy;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

@@ -15,7 +15,6 @@ namespace Platformer_Csharp_Project
         bool goLeft, goRight, isGameOver;
 
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -58,17 +57,10 @@ namespace Platformer_Csharp_Project
                 goRight = false;
             }
         }
-
         private void Rb_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            enemy.Location = new Point(enemy.Location.X, enemy.Location.Y+5);
-        }
-
         public Form1()
         {
             InitializeComponent();
@@ -88,6 +80,7 @@ namespace Platformer_Csharp_Project
                 pictureBox1.Location = new Point(pictureBox1.Location.X+10, pictureBox1.Location.Y);
             if (pictureBox1.Bounds.IntersectsWith(enemy.Bounds))
                 isGameOver = true;
+            enemy.Location = new Point(enemy.Location.X, enemy.Location.Y+5);
         }
     }
 }
