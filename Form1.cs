@@ -13,8 +13,9 @@ namespace Platformer_Csharp_Project
     public partial class Form1 : Form
     {
         bool goLeft, goRight, isGameOver;
-
-
+        bool goDown = true;
+        Random random = new Random();
+        int queue = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -70,6 +71,7 @@ namespace Platformer_Csharp_Project
         }
         private void MainGameEvent(object sender, EventArgs e)
         {
+            queue++;
             if (pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
                 goLeft = false;
             if(pictureBox1.Bounds.IntersectsWith(Rb.Bounds))
@@ -80,7 +82,62 @@ namespace Platformer_Csharp_Project
                 pictureBox1.Location = new Point(pictureBox1.Location.X+10, pictureBox1.Location.Y);
             if (pictureBox1.Bounds.IntersectsWith(enemy.Bounds))
                 isGameOver = true;
-            enemy.Location = new Point(enemy.Location.X, enemy.Location.Y+5);
+            if(goDown)
+            {
+                enemy.Location = new Point(enemy.Location.X, enemy.Location.Y + random.Next(10,15));
+                if(queue>25)
+                {
+                    enemy1.Location = new Point(enemy1.Location.X, enemy1.Location.Y + random.Next(3,12));
+                }
+                if(queue>40)
+                {
+                    friendly1.Location = new Point(friendly1.Location.X, friendly1.Location.Y + random.Next(3, 12));
+                }
+                if(queue>75)
+                {
+                    enemy2.Location = new Point(enemy2.Location.X, enemy2.Location.Y + random.Next(10,15));
+                }
+                if(queue>80)
+                {
+                    friendly2.Location=new Point(friendly2.Location.X, friendly2.Location.Y + random.Next(3, 12));
+                }
+                if(queue>95)
+                {
+                    enemy3.Location = new Point(enemy3.Location.X, enemy3.Location.Y + random.Next(3, 12));
+                }
+                if(queue>120)
+                {
+                    friendly3.Location = new Point(friendly3.Location.X, friendly3.Location.Y + random.Next(3, 12));
+                }
+            }
+            if(enemy.Location.Y>(Size.Height+enemy.Height))
+            {
+                enemy.Location = new Point(random.Next(0, 530), 0);
+            }
+            if (enemy1.Location.Y > (Size.Height + enemy1.Height))
+            {
+                enemy1.Location = new Point(random.Next(0, 530), 0);
+            }
+            if (enemy2.Location.Y > (Size.Height + enemy2.Height))
+            {
+                enemy2.Location = new Point(random.Next(0, 530), 0);
+            }
+            if (enemy3.Location.Y > (Size.Height + enemy3.Height))
+            {
+                enemy3.Location = new Point(random.Next(0, 530), 0);
+            }
+            if(friendly1.Location.Y> (Size.Height + friendly1.Height))
+            {
+                friendly1.Location = new Point(random.Next(0, 540), 0);
+            }
+            if (friendly2.Location.Y > (Size.Height + friendly2.Height))
+            {
+                friendly2.Location = new Point(random.Next(0, 540), 0);
+            }
+            if (friendly3.Location.Y > (Size.Height + friendly3.Height))
+            {
+                friendly3.Location = new Point(random.Next(0, 540), 0);
+            }
         }
     }
 }
