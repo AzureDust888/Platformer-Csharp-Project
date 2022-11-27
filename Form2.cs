@@ -16,6 +16,12 @@ namespace Platformer_Csharp_Project
         public Form2()
         {
             InitializeComponent();
+            
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Score: " + Class1.score.ToString();
         }
     }
 }

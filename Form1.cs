@@ -17,8 +17,9 @@ namespace Platformer_Csharp_Project
         Random random = new Random();
         int queue = 0;
         public int score = 0;
-        public static Form1 form = null;
+        
         Form2 f2 = new Form2();
+        public static Form1 form = null;
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -183,6 +184,7 @@ namespace Platformer_Csharp_Project
             if(isGameOver)
             {
                 f2.Show();
+                Class1.score = score;
                 timer1.Stop();
             }
         }
