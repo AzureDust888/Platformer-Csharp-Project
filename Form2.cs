@@ -21,7 +21,6 @@ namespace Platformer_Csharp_Project
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
             Application.Exit();
         }
 
@@ -33,13 +32,11 @@ namespace Platformer_Csharp_Project
 
         private void close_Click(object sender, EventArgs e)
         {
-            this.Close();
             Application.Exit();
         }
 
         private void restart_Click(object sender, EventArgs e)
         {
-            this.Close();
             Application.Restart();
         }
 

@@ -147,7 +147,7 @@
             this.lb_score.AutoSize = true;
             this.lb_score.BackColor = System.Drawing.Color.Transparent;
             this.lb_score.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_score.Location = new System.Drawing.Point(479, 0);
+            this.lb_score.Location = new System.Drawing.Point(465, 0);
             this.lb_score.Name = "lb_score";
             this.lb_score.Size = new System.Drawing.Size(67, 25);
             this.lb_score.TabIndex = 10;
@@ -191,6 +191,7 @@
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

@@ -30,7 +30,6 @@ namespace Platformer_Csharp_Project
             {
                 MessageBox.Show(ex.Message);
             }
-            MainGameEvent(sender, e);
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
