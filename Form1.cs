@@ -7,22 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Text.Json;
+using System.IO;
 namespace Platformer_Csharp_Project
 {
     public partial class Form1 : Form
     {
+        static int num_of_games = 0;
         bool goLeft, goRight, isGameOver;
         bool goDown = true;
         Random random = new Random();
         int queue = 0;
         public int score = 0;
-        
         Form2 f2 = new Form2();
         public static Form1 form = null;
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if(num_of_games!=0)
+                {
+                    Class1.loadScore();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -76,6 +87,7 @@ namespace Platformer_Csharp_Project
         }
         private void MainGameEvent(object sender, EventArgs e)
         {
+            num_of_games++;
             queue++;
             if (pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
                 goLeft = false;
@@ -183,6 +195,11 @@ namespace Platformer_Csharp_Project
             lb_score.Text = "Score: " + score.ToString();
             if(isGameOver)
             {
+                if(score>Class1.max_score)
+                {
+                    Class1.max_score = score;
+                    Class1.saveScore(score);
+                }
                 f2.Show();
                 Class1.score = score;
                 timer1.Stop();
