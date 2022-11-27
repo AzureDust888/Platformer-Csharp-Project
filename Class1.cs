@@ -13,19 +13,17 @@ namespace Platformer_Csharp_Project
     static class Class1
     {
         public static int score = 0;
-        static int[] mas;
-        public static int max_score = 0;
+        public static int max_score=0;
         public static async Task saveScore(int sc)
         {
             var option = new JsonSerializerOptions()
             {
                 WriteIndented = true
             };
-            using (FileStream fs = new FileStream("Scores.json", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream("Scores.json", FileMode.Create))
             {
                 await System.Text.Json.JsonSerializer.SerializeAsync(fs, sc);
             }
-
         }
         public static async void loadScore()
         {
@@ -35,17 +33,7 @@ namespace Platformer_Csharp_Project
             };
             using (FileStream fs = new FileStream("Scores.json", FileMode.Open))
             {
-                mas = await System.Text.Json.JsonSerializer.DeserializeAsync<int[]>(fs);
-            }
-        }
-        public static  void searchMaxScore()
-        {
-            for(int i=0;i<mas.Length;i++)
-            {
-                if(mas[i] > max_score)
-                {
-                    max_score = mas[i];
-                }
+                max_score = await System.Text.Json.JsonSerializer.DeserializeAsync<int>(fs);
             }
         }
     }

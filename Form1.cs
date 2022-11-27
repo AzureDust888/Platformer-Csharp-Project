@@ -13,7 +13,6 @@ namespace Platformer_Csharp_Project
 {
     public partial class Form1 : Form
     {
-        static int num_of_games = 0;
         bool goLeft, goRight, isGameOver;
         bool goDown = true;
         Random random = new Random();
@@ -25,10 +24,7 @@ namespace Platformer_Csharp_Project
         {
             try
             {
-                if(num_of_games!=0)
-                {
-                    Class1.loadScore();
-                }
+                Class1.loadScore();
             }
             catch(Exception ex)
             {
@@ -87,7 +83,6 @@ namespace Platformer_Csharp_Project
         }
         private void MainGameEvent(object sender, EventArgs e)
         {
-            num_of_games++;
             queue++;
             if (pictureBox1.Bounds.IntersectsWith(Lb.Bounds))
                 goLeft = false;
@@ -195,13 +190,13 @@ namespace Platformer_Csharp_Project
             lb_score.Text = "Score: " + score.ToString();
             if(isGameOver)
             {
-                if(score>Class1.max_score)
+                Class1.score = score;
+                if (score>Class1.max_score)
                 {
                     Class1.max_score = score;
-                    Class1.saveScore(score);
+                    Class1.saveScore(score);;
                 }
                 f2.Show();
-                Class1.score = score;
                 timer1.Stop();
             }
         }
