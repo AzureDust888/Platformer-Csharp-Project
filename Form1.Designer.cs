@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Lb = new System.Windows.Forms.PictureBox();
             this.Rb = new System.Windows.Forms.PictureBox();
@@ -42,7 +41,8 @@
             this.friendly2 = new System.Windows.Forms.PictureBox();
             this.friendly3 = new System.Windows.Forms.PictureBox();
             this.lb_score = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).BeginInit();
@@ -52,16 +52,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.friendly1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendly2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendly3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox1.Location = new System.Drawing.Point(263, 589);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // timer1
             // 
@@ -152,18 +145,37 @@
             // lb_score
             // 
             this.lb_score.AutoSize = true;
+            this.lb_score.BackColor = System.Drawing.Color.Transparent;
             this.lb_score.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_score.Location = new System.Drawing.Point(488, 0);
+            this.lb_score.Location = new System.Drawing.Point(479, 0);
             this.lb_score.Name = "lb_score";
             this.lb_score.Size = new System.Drawing.Size(67, 25);
             this.lb_score.TabIndex = 10;
             this.lb_score.Text = "label1";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(596, 663);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
+            this.pictureBox1.Location = new System.Drawing.Point(263, 589);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(590, 661);
             this.Controls.Add(this.lb_score);
             this.Controls.Add(this.friendly3);
@@ -176,12 +188,13 @@
             this.Controls.Add(this.Rb);
             this.Controls.Add(this.Lb);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).EndInit();
@@ -191,14 +204,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.friendly1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendly2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendly3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox Lb;
         private System.Windows.Forms.PictureBox Rb;
@@ -210,6 +223,8 @@
         private System.Windows.Forms.PictureBox friendly2;
         private System.Windows.Forms.PictureBox friendly3;
         private System.Windows.Forms.Label lb_score;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
