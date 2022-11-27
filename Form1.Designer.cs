@@ -40,6 +40,7 @@
             this.friendly1 = new System.Windows.Forms.PictureBox();
             this.friendly2 = new System.Windows.Forms.PictureBox();
             this.friendly3 = new System.Windows.Forms.PictureBox();
+            this.lb_score = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rb)).BeginInit();
@@ -87,7 +88,7 @@
             // enemy
             // 
             this.enemy.BackColor = System.Drawing.Color.Red;
-            this.enemy.Location = new System.Drawing.Point(37, 12);
+            this.enemy.Location = new System.Drawing.Point(40, 22);
             this.enemy.Name = "enemy";
             this.enemy.Size = new System.Drawing.Size(23, 22);
             this.enemy.TabIndex = 3;
@@ -96,16 +97,16 @@
             // enemy1
             // 
             this.enemy1.BackColor = System.Drawing.Color.Red;
-            this.enemy1.Location = new System.Drawing.Point(211, 12);
+            this.enemy1.Location = new System.Drawing.Point(181, 12);
             this.enemy1.Name = "enemy1";
-            this.enemy1.Size = new System.Drawing.Size(44, 34);
+            this.enemy1.Size = new System.Drawing.Size(39, 34);
             this.enemy1.TabIndex = 4;
             this.enemy1.TabStop = false;
             // 
             // enemy2
             // 
             this.enemy2.BackColor = System.Drawing.Color.Red;
-            this.enemy2.Location = new System.Drawing.Point(374, 12);
+            this.enemy2.Location = new System.Drawing.Point(358, 12);
             this.enemy2.Name = "enemy2";
             this.enemy2.Size = new System.Drawing.Size(23, 22);
             this.enemy2.TabIndex = 5;
@@ -114,7 +115,7 @@
             // enemy3
             // 
             this.enemy3.BackColor = System.Drawing.Color.Red;
-            this.enemy3.Location = new System.Drawing.Point(502, 12);
+            this.enemy3.Location = new System.Drawing.Point(518, 12);
             this.enemy3.Name = "enemy3";
             this.enemy3.Size = new System.Drawing.Size(56, 50);
             this.enemy3.TabIndex = 6;
@@ -123,7 +124,7 @@
             // friendly1
             // 
             this.friendly1.BackColor = System.Drawing.Color.Chartreuse;
-            this.friendly1.Location = new System.Drawing.Point(118, 12);
+            this.friendly1.Location = new System.Drawing.Point(98, 12);
             this.friendly1.Name = "friendly1";
             this.friendly1.Size = new System.Drawing.Size(39, 34);
             this.friendly1.TabIndex = 7;
@@ -132,7 +133,7 @@
             // friendly2
             // 
             this.friendly2.BackColor = System.Drawing.Color.Chartreuse;
-            this.friendly2.Location = new System.Drawing.Point(299, 12);
+            this.friendly2.Location = new System.Drawing.Point(263, 12);
             this.friendly2.Name = "friendly2";
             this.friendly2.Size = new System.Drawing.Size(39, 34);
             this.friendly2.TabIndex = 8;
@@ -147,11 +148,22 @@
             this.friendly3.TabIndex = 9;
             this.friendly3.TabStop = false;
             // 
+            // lb_score
+            // 
+            this.lb_score.AutoSize = true;
+            this.lb_score.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_score.Location = new System.Drawing.Point(488, 0);
+            this.lb_score.Name = "lb_score";
+            this.lb_score.Size = new System.Drawing.Size(67, 25);
+            this.lb_score.TabIndex = 10;
+            this.lb_score.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 661);
+            this.Controls.Add(this.lb_score);
             this.Controls.Add(this.friendly3);
             this.Controls.Add(this.friendly2);
             this.Controls.Add(this.friendly1);
@@ -178,6 +190,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.friendly2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendly3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -194,6 +207,7 @@
         private System.Windows.Forms.PictureBox friendly1;
         private System.Windows.Forms.PictureBox friendly2;
         private System.Windows.Forms.PictureBox friendly3;
+        private System.Windows.Forms.Label lb_score;
     }
 }
 

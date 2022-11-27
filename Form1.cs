@@ -16,6 +16,9 @@ namespace Platformer_Csharp_Project
         bool goDown = true;
         Random random = new Random();
         int queue = 0;
+        public int score = 0;
+        public static Form1 form = null;
+        Form2 f2 = new Form2();
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -68,6 +71,7 @@ namespace Platformer_Csharp_Project
             timer1.Enabled = true;
             timer1.Interval = 1;
             timer1.Start();
+            form = this;
         }
         private void MainGameEvent(object sender, EventArgs e)
         {
@@ -81,7 +85,9 @@ namespace Platformer_Csharp_Project
             if(goRight)
                 pictureBox1.Location = new Point(pictureBox1.Location.X+10, pictureBox1.Location.Y);
             if (pictureBox1.Bounds.IntersectsWith(enemy.Bounds))
+            {
                 isGameOver = true;
+            } 
             if(goDown)
             {
                 enemy.Location = new Point(enemy.Location.X, enemy.Location.Y + random.Next(10,15));
@@ -110,7 +116,7 @@ namespace Platformer_Csharp_Project
                     friendly3.Location = new Point(friendly3.Location.X, friendly3.Location.Y + random.Next(3, 12));
                 }
             }
-            if(enemy.Location.Y>(Size.Height+enemy.Height))
+            if (enemy.Location.Y>(Size.Height+enemy.Height))
             {
                 enemy.Location = new Point(random.Next(0, 530), 0);
             }
@@ -137,6 +143,47 @@ namespace Platformer_Csharp_Project
             if (friendly3.Location.Y > (Size.Height + friendly3.Height))
             {
                 friendly3.Location = new Point(random.Next(0, 540), 0);
+            }
+            if (pictureBox1.Bounds.IntersectsWith(friendly1.Bounds))
+            {
+                score++;
+                friendly1.Location = new Point(random.Next(0, 540), 0);
+            }
+            if (pictureBox1.Bounds.IntersectsWith(friendly2.Bounds))
+            {
+                score++;
+                friendly2.Location = new Point(random.Next(0, 540), 0);
+            }
+            if (pictureBox1.Bounds.IntersectsWith(friendly3.Bounds))
+            {
+                score++;
+                friendly3.Location = new Point(random.Next(0, 540), 0);
+            }
+            if(pictureBox1.Bounds.IntersectsWith(enemy.Bounds))
+            {
+                isGameOver = true;
+                enemy.Location = new Point(random.Next(0, 530), 0);
+            }
+            if (pictureBox1.Bounds.IntersectsWith(enemy1.Bounds))
+            {
+                isGameOver = true;
+                enemy1.Location = new Point(random.Next(0, 530), 0);
+            }
+            if (pictureBox1.Bounds.IntersectsWith(enemy2.Bounds))
+            {
+                isGameOver = true;
+                enemy2.Location = new Point(random.Next(0, 530), 0);
+            }
+            if (pictureBox1.Bounds.IntersectsWith(enemy3.Bounds))
+            {
+                isGameOver = true;
+                enemy3.Location = new Point(random.Next(0, 530), 0);
+            }
+            lb_score.Text = "Score: " + score.ToString();
+            if(isGameOver)
+            {
+                f2.Show();
+                timer1.Stop();
             }
         }
     }
