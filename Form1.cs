@@ -101,6 +101,8 @@ namespace Platformer_Csharp_Project
         }
         int[] speed = new int[2];
         int speed_up = 0;
+        int count_step_left = 0;
+        int count_step_right = 0;
         private void MainGameEvent(object sender, EventArgs e)
         {
             queue++;
@@ -115,9 +117,33 @@ namespace Platformer_Csharp_Project
             if(pictureBox1.Bounds.IntersectsWith(Rb.Bounds))
                 goRight = false;
             if(goLeft)
-                pictureBox1.Location = new Point(pictureBox1.Location.X-10, pictureBox1.Location.Y);
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 10, pictureBox1.Location.Y);
+                if(count_step_left<4)
+                {
+                    count_step_left++;
+                    pictureBox1.BackgroundImage = Image.FromFile(dir.FullName + "\\Resources\\m-w"+count_step_left+".png");
+                }
+                else
+                {
+                    count_step_left = 0;
+                }
+            }
+               
             if(goRight)
-                pictureBox1.Location = new Point(pictureBox1.Location.X+10, pictureBox1.Location.Y);
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y);
+                if (count_step_right < 4)
+                {
+                    count_step_right++;
+                    pictureBox1.BackgroundImage = Image.FromFile(dir.FullName + "\\Resources\\w" + count_step_right + ".png");
+                }
+                else
+                {
+                   count_step_right = 0;
+                }
+            }
+                
             if (pictureBox1.Bounds.IntersectsWith(enemy.Bounds))
             {
                 isGameOver = true;

@@ -109,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -127,7 +128,9 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\f4.png" />
-    <Content Include="Resources\m-w1.png" />
+    <Content Include="Resources\m-w1.png">
+      <CustomToolNamespace>Platformer_Csharp_Project</CustomToolNamespace>
+    </Content>
     <Content Include="Resources\m-w2.png" />
     <Content Include="Resources\m-w3.png" />
     <Content Include="Resources\m-w4.png" />

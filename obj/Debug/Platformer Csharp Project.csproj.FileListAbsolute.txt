@@ -68,3 +68,38 @@ C:\Users\Zero\Source\Repos\Platformer-Csharp-Project9\obj\Debug\Platformer Cshar
 C:\Users\Zero\Source\Repos\Platformer-Csharp-Project9\obj\Debug\Platformer Csharp Project.csproj.CopyComplete
 C:\Users\Zero\Source\Repos\Platformer-Csharp-Project9\obj\Debug\Platformer Csharp Project.exe
 C:\Users\Zero\Source\Repos\Platformer-Csharp-Project9\obj\Debug\Platformer Csharp Project.pdb
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Platformer Csharp Project.exe.config
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Platformer Csharp Project.exe
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Platformer Csharp Project.pdb
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Buffers.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Memory.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Text.Json.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Microsoft.AspNetCore.JsonPatch.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Buffers.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Memory.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Text.Json.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer_Csharp_Project.Form1.resources
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer_Csharp_Project.Form2.resources
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer_Csharp_Project.Properties.Resources.resources
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.CopyComplete
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.exe
+C:\Users\User\Source\Repos\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.pdb
