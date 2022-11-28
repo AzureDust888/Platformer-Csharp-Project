@@ -63,18 +63,18 @@
             // Lb
             // 
             this.Lb.BackColor = System.Drawing.Color.Transparent;
-            this.Lb.Location = new System.Drawing.Point(0, -14);
+            this.Lb.Location = new System.Drawing.Point(-27, -14);
             this.Lb.Name = "Lb";
-            this.Lb.Size = new System.Drawing.Size(10, 776);
+            this.Lb.Size = new System.Drawing.Size(34, 776);
             this.Lb.TabIndex = 1;
             this.Lb.TabStop = false;
             // 
             // Rb
             // 
             this.Rb.BackColor = System.Drawing.Color.Transparent;
-            this.Rb.Location = new System.Drawing.Point(580, -14);
+            this.Rb.Location = new System.Drawing.Point(582, -14);
             this.Rb.Name = "Rb";
-            this.Rb.Size = new System.Drawing.Size(16, 776);
+            this.Rb.Size = new System.Drawing.Size(32, 776);
             this.Rb.TabIndex = 2;
             this.Rb.TabStop = false;
             this.Rb.Click += new System.EventHandler(this.Rb_Click);
