@@ -26,10 +26,7 @@ namespace Platformer_Csharp_Project
             {
                 Class1.loadScore();
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            catch { }
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -73,6 +70,12 @@ namespace Platformer_Csharp_Project
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public Form1()
         {
             InitializeComponent();
