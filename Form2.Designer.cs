@@ -28,39 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.restart = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(136, 38);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 19);
+            this.label1.Size = new System.Drawing.Size(60, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(136, 75);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(306, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 19);
+            this.label2.Size = new System.Drawing.Size(60, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
             // restart
             // 
-            this.restart.BackColor = System.Drawing.Color.GreenYellow;
-            this.restart.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.restart.Location = new System.Drawing.Point(56, 128);
+            this.restart.BackColor = System.Drawing.Color.Yellow;
+            this.restart.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restart.Location = new System.Drawing.Point(16, 242);
             this.restart.Name = "restart";
-            this.restart.Size = new System.Drawing.Size(75, 23);
+            this.restart.Size = new System.Drawing.Size(75, 37);
             this.restart.TabIndex = 2;
             this.restart.Text = "Restart";
             this.restart.UseVisualStyleBackColor = false;
@@ -68,22 +74,36 @@
             // 
             // close
             // 
-            this.close.BackColor = System.Drawing.Color.Crimson;
-            this.close.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.close.Location = new System.Drawing.Point(210, 128);
+            this.close.BackColor = System.Drawing.Color.Gray;
+            this.close.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.close.Location = new System.Drawing.Point(312, 242);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.Size = new System.Drawing.Size(75, 37);
             this.close.TabIndex = 3;
             this.close.Text = "Close";
             this.close.UseVisualStyleBackColor = false;
             this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Goudy Stout", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.label3.Location = new System.Drawing.Point(91, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 26);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Game over";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
-            this.ClientSize = new System.Drawing.Size(340, 187);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(399, 291);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.close);
             this.Controls.Add(this.restart);
             this.Controls.Add(this.label2);
@@ -104,5 +124,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button restart;
         private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Label label3;
     }
 }
