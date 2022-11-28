@@ -1,0 +1,35 @@
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Platformer Csharp Project.exe.config
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Platformer Csharp Project.exe
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Platformer Csharp Project.pdb
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Buffers.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Memory.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Text.Json.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.ValueTuple.dll
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Microsoft.AspNetCore.JsonPatch.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Buffers.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Memory.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Text.Json.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\bin\Debug\System.ValueTuple.xml
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.AssemblyReference.cache
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer_Csharp_Project.Form1.resources
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer_Csharp_Project.Form2.resources
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer_Csharp_Project.Properties.Resources.resources
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.GenerateResource.cache
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.CoreCompileInputs.cache
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.csproj.CopyComplete
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.exe
+C:\Users\Zero\Source\Repos\AzureDust888\Platformer-Csharp-Project\obj\Debug\Platformer Csharp Project.pdb
