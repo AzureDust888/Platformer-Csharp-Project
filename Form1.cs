@@ -68,7 +68,7 @@ namespace Platformer_Csharp_Project
         }
         private void Rb_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
