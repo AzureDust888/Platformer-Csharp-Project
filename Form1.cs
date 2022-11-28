@@ -16,6 +16,7 @@ namespace Platformer_Csharp_Project
         bool goLeft, goRight, isGameOver;
         bool goDown = true;
         Random random = new Random();
+        DirectoryInfo dir = new DirectoryInfo(Directory.GetCurrentDirectory());
         int queue = 0;
         public int score = 0;
         Form2 f2 = new Form2();
@@ -92,6 +93,9 @@ namespace Platformer_Csharp_Project
             Rb.Parent = pictureBox2;
             speed[0] = random.Next(7,7);
             speed[1] = random.Next(4,4);
+            dir = dir.Parent.Parent;
+            pictureBox1.Parent = pictureBox2;
+            pictureBox1.BackgroundImage = Image.FromFile(dir.FullName + "\\Resources\\w1.png");
             timer1.Start();
             form = this;
         }
@@ -226,6 +230,7 @@ namespace Platformer_Csharp_Project
             lb_score.Text = "Score: " + score.ToString();
             if (isGameOver)
             {
+                pictureBox1.BackgroundImage = Image.FromFile(dir.FullName + "\\Resources\\f4.png");
                 Class1.score = score;
                 if (score>Class1.max_score)
                 {
